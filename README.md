@@ -1,3 +1,8 @@
+# Please cite
+Algorithm: **zeroCPR**<br>
+Author: **Michelangiolo Mazzeschi**<br>
+Published: **2nd September 2024**
+
 # Vergil agent: a guiding-meachanism enabled agent (gmA)
 
 This tool is used to create **guiding-mechanism enabled agents (gmA)**: bots that are specialised in guiding the user towards specified goals with minimal interaction required from the devs (the so called Socratic method). The main problem we are trying to address is that most times, if an agent is programmed to guide the user by asking questions, there might be no end of the depth of the granularity.
