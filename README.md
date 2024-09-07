@@ -1,7 +1,7 @@
 # Please cite
 Algorithm: **guiding-mechanism**<br>
 Author: **Michelangiolo Mazzeschi**<br>
-Published: **2nd September 2024**
+Published: **8th September 2024**
 
 # Vergil agent: a guiding-mechanism enabled agent (gmA)
 
