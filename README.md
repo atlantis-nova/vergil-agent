@@ -1,13 +1,13 @@
 # Please cite
-Algorithm: **zeroCPR**<br>
+Algorithm: **guiding-mechanism**<br>
 Author: **Michelangiolo Mazzeschi**<br>
 Published: **2nd September 2024**
 
-# Vergil agent: a guiding-meachanism enabled agent (gmA)
+# Vergil agent: a guiding-mechanism enabled agent (gmA)
 
-This tool is used to create **guiding-mechanism enabled agents (gmA)**: bots that are specialised in guiding the user towards specified goals with minimal interaction required from the devs (the so called Socratic method). The main problem we are trying to address is that most times, if an agent is programmed to guide the user by asking questions, there might be no end of the depth of the granularity.
+This tool is used to create **guiding-mechanism enabled agents (gmA)**: bots that are specialized in guiding the user towards specified goals with minimal interaction required from the devs (the so-called Socratic method). The main problem we are trying to address is that most times, if an agent is programmed to guide the user by asking questions, there might be no end to the depth of the granularity.
 
-Ex. when conduing the Socratic method, a **regular agent** (without any integrated guiding mechanism) programmed to recommend artwork to a customer will ask a neverending set of questions (though below we are going to use fashion, art is an even better example, as it has a tendency to ask for questions endlessly):
+Ex. when conducting the Socratic method, a **regular agent** (without any integrated guiding mechanism) programmed to recommend artwork to a customer will ask a neverending set of questions (though below we are going to use fashion, art is an even better example, as it has a tendency to ask for questions endlessly):
 ```
 Bot:    Do you already have an artwork in mind?
 User:   not really
@@ -43,9 +43,9 @@ While we have introduced a **base sub-mechanism**, the original prompting struct
 
 ### base
 
-The **base sub-mechanism** is based on a single components:
+The **base sub-mechanism** is based on a single component:
 - **subject_description**
-We keep track of whatever the user wishes for updated with the last request. If you look at clothing description, it gets updated after every interaction with the bot.
+We keep track of whatever the user wishes for updated with the last request. If you look at the clothing description, it gets updated after every interaction with the bot.
 - **objectives**
 The *list of notions* the agent has to extract from the conversation.
 
@@ -73,7 +73,7 @@ The following is a snapshot of a conversation history that uses this mechanism:
 
 By using the **rush sub-mechanism**, the agent tries to accomplish its goals as quickly as possible, and is based on multiple extra components:
 - **iteration**
-The question nuber: it is used to harsh the agent into reaching the objective as *quickly as possible*.
+The question number: it is used to force the agent into reaching the objective as *quickly as possible*.
 - **objectives_left**
 The *list of notions* the agent has to extract from the conversation. Compared with the base sub-mechanism, we keep track of the remaining ones across the history.
 As you can see from the example below, the objectives begin with iteration 1 *"determine clothing type, material, and color"*, and as soon they have been answered by the user, they are removed from the list and no longer considered a priority
